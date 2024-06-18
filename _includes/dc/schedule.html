@@ -126,7 +126,25 @@ The schedule for the different curricula are listed here:
     </table>
   </div>
 	
- 
+ <div class="col-md-6">
+    <h3>Day 4</h3>
+    <table class="table table-striped">
+
+      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
+      <tr>
+        <td>
+          {% if site.flavor == "r" %}
+          
+	<tr><td>Afternoon</td> <td> <a href="https://datacarpentry.org/sql-ecology-lesson/">Continuation: Data Management with SQL</a></td></tr>
+          {% elsif site.flavor == "python" %}
+          
+          {% else %}
+          {% include warning-flavor.html %}
+          {% endif %}
+      </td></tr>
+      <tr> <td>END</td> </tr>
+    </table>
+  </div>
 
 {% elsif site.curriculum == "dc-genomics" %}
 
